@@ -15,9 +15,7 @@ public class StudentDetails {
     	System.out.println("sf is ready"+sf);
         Session session =sf.openSession();   
        Transaction tr = session.beginTransaction();
-       
-       Login l = new Login("arti123","@1234");
-        session.save(l);
+      
         Course c1=new Course(301,"java","3 months");
     	Course c2 = new Course(302,".Net","3 months");
      	session.save(c1);
